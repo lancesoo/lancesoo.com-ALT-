@@ -48,9 +48,9 @@
 			.grid-container {
 				display:grid;
 				grid-template-areas:
-					'header header header header header header'
-					'menu main main main main main'
-					'footer footer footer footer footer footer';
+					'header header header header header header header'
+					'menu main main main main main main'
+					'footer footer footerbg footerbg footerbg footerbg footerbg';
 				grid-gap: 4vw;
 				background-color: #999;
 				padding: 2vw;
@@ -58,7 +58,7 @@
 			
 			.grid-container > div {
 				background-color: #DDD;
-				text-align: center;
+				text-align: left;
 				padding: 0 2vw;
 				font-size: 2vw;
 			}
@@ -71,6 +71,11 @@
 			div.footer {
 				font-size: 1vw;
 				padding: 1vw;
+			}
+			
+			div.footerbg {
+				padding: 1vw;
+				background-color: #999;
 			}
 			
 		</style>
@@ -92,14 +97,15 @@
 			
 			<div class = "menu">
 				<h3>Menu</h3>
+				<a href="/eng_projects.html">Engineering Projects</a>
 				<hr>
-				<hr>
+				<a href="/cs_projects.html">CS Projects</a>
 			</div>
 			
 			<div class = "main">
-				
+				<h2>About Me</h2>
 				<br>
-				
+				I'm typing this late at night and I'll update this...soon.
 				<br>
 				
 			</div>
