@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lance Soo's Website</title>
+		<!-- <link rel="shortcut icon" href="favicon.png" type="image/png"> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+		
+		<style>
+			html {
+				font-family: "Raleway", "Lucida Sans", sans-serif;
+				scroll-behavior: smooth;
+				font-size: 4vw;
+			}
+			body {background-color: #999; color: black;}
+			table{
+				width: 2vw;
+				text-align: center;
+			}
+			
+			a:link {
+				color: gray;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			a:visited {
+				color: maroon;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			a:hover {
+				color: white;
+				background-color: transparent;
+				text-decoration: underline;
+			}
+			a:active {
+				color: yellow;
+				background-color: transparent;
+				text-decoration: underline;
+			}
+			
+			.header {grid-area: header;}
+			.menu {grid-area: menu;}
+			.main {grid-area: main;}
+			.right {grid-area: right;}
+			.footer {grid-area: footer;}
+			
+			.grid-container {
+				display:grid;
+				grid-template-areas:
+					'header header header header header header header'
+					'menu main main main main main main'
+					'footer footer footer footerbg footerbg footerbg footerbg';
+				grid-gap: 4vw;
+				background-color: #999;
+				padding: 2vw;
+			}
+			
+			.grid-container > div {
+				background-color: #DDD;
+				text-align: left;
+				padding: 0 2vw;
+			}
+			
+			div.menu {
+				padding: 3vw;
+				text-align: left;
+			}
+			
+			div.footer {
+				font-size: 2vw;
+				padding: 1vw;
+			}
+			
+			div.footerbg {
+				padding: 1vw;
+				background-color: #999;
+			}
+			
+		</style>
+		
+		<meta name = "description" content = "Lance Soo's website" />
+		<!-- <meta name = "image" content = "favicon.png" /> -->
+		<meta name = "author" content = "Lance Soo" />
+		<!-- <meta name = "keywords" content = "" /> -->
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<div class = "grid-container">
+			<div class = "header">
+				<h1 style="font-size:10vw" align="left"><strong>lance soo</strong></h1>
+				<h2 style="font-szie:3vw" align="right">welcome to my website!</h2>
+			</div>
+			
+			<div class = "menu">
+				<h3>Menu</h3>
+				<a href="/index.html">Home</a>
+				<hr>
+				<a href="https://drive.google.com/drive/folders/1mio0ff9mT5eKN6ZRehb8uWD9u5wFSu__?usp=sharing">Engineering Projects</a>
+				<hr>
+				<a href="https://drive.google.com/drive/folders/1NVV2NZnoUKshpPqlKRhJHllQBrFIlcTO?usp=sharing">CS Projects</a>
+				<hr>
+				<a href="https://docs.google.com/document/d/e/2PACX-1vSRnCGpv9Ba9bgbMPxGhlsekRjKTp7yGhFOZtZOuIpuDTJHQ0uqBeMCKaVNdsOIqjysVEQgx3oqrrDD/pub">Resume</a>
+				<hr>
+				<p><i>Contact</i></p>
+			</div>
+			
+			<div class = "main">
+				<h2>Contact Me</h2>
+				<p style="word-wrap: break-word;">
+					<ul>
+						<li><a href="mailto:lsoo@students.kennesaw.edu">Email me</a></li>
+						<br>
+						<li><a href="https://www.linkedin.com/in/lancesoo/">Connect on LinkedIn</a></li>
+						<br>
+						<li><a href="https://app.joinhandshake.com/users/15398524">Connect on Handshake</a></li>
+					</ul>
+				</p>
+			</div>
+			<!-- <div class = "right">Right</div> -->
+			<div class = "footer">
+				<a href = "https://github.com/lancesoo/lancesoo.com-ALT-">See this site's repo on GitHub</a>
+				<br>
+				By Lance Soo, 2021
+			</div>
+		</div>
+	</body>
+</html>
